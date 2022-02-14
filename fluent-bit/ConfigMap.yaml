@@ -3,23 +3,11 @@ kind: ConfigMap
 metadata:
   name: fluent-bit-cluster-info
   namespace: amazon-cloudwatch
-  uid: a88a360a-b3cd-4708-a4a7-0761337a5fea
-  resourceVersion: '26107725'
   managedFields:
     - manager: kubectl-create
       operation: Update
       apiVersion: v1
-      time: '2022-02-11T17:54:01Z'
       fieldsType: FieldsV1
-      fieldsV1:
-        f:data:
-          .: {}
-          f:cluster.name: {}
-          f:http.port: {}
-          f:http.server: {}
-          f:logs.region: {}
-          f:read.head: {}
-          f:read.tail: {}
   selfLink: /api/v1/namespaces/amazon-cloudwatch/configmaps/fluent-bit-cluster-info
 data:
   cluster.name: devhub-cloud
