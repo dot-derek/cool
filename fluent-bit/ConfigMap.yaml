@@ -1,18 +1,12 @@
 apiVersion: v1
+data:
+  cluster.name: devhub-stage-eks
+  http.port: "2020"
+  http.server: "On"
+  logs.region: us-east-1
+  read.head: "Off"
+  read.tail: "On"
 kind: ConfigMap
 metadata:
   name: fluent-bit-cluster-info
   namespace: amazon-cloudwatch
-  managedFields:
-    - manager: kubectl-create
-      operation: Update
-      apiVersion: v1
-      fieldsType: FieldsV1
-  selfLink: /api/v1/namespaces/amazon-cloudwatch/configmaps/fluent-bit-cluster-info
-data:
-  cluster.name: devhub-cloud
-  http.port: '2020'
-  http.server: 'On'
-  logs.region: us-east-1
-  read.head: 'Off'
-  read.tail: 'On'
